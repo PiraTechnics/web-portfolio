@@ -6,7 +6,7 @@ function AppLink({ icon, link, title, subtitle }) {
         <Col xs={12} sm={6} md={4} xl={3}>
             <Container className="p-3 mx-0">
                 <Row>
-                    <Col className="p-0 border border-2 border-light-subtle rounded bg-info-subtle" style={{ maxWidth: "100px", minWidth: "80px", height: "auto", margin: "auto" }}>
+                    <Col className="p-0 border border-2 border-light-subtle rounded bg-info-subtle d-flex align-items-center justify-content-center" style={{ maxWidth: "80px", aspectRatio: "1 / 1", margin: "auto" }}>
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             {icon}
                         </a>
