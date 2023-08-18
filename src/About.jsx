@@ -4,7 +4,7 @@ import "./App.css";
 
 const About = () => {
   return (
-    <Container id="about" className="py-5 bg-secondary-subtle" fluid>
+    <Container id="about" className="py-5 mt-3 bg-secondary-subtle" fluid>
       <h2>Hi, I'm Devin!</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dui
