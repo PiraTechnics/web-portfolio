@@ -1,16 +1,32 @@
+import { useState, useEffect } from "react";
 import PiraTechnics from "./assets/pira-icon.png";
 import { Container, Navbar, Nav, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const Header = () => {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+      /*       console.log(scroll);
+      console.log(window.scrollY); */
+    });
+  }, [scroll]);
+
   return (
     <Navbar
+      id="navbar-custom"
       expand="sm"
-      bg="dark"
+      /*       bg="dark" */
       data-bs-theme="dark"
       fixed="top"
-      className="py-1"
+      /* className="navbar-custom py-1" */
+      className={
+        scroll
+          ? "bg-dark-subtle px-2 py-1 scrolled"
+          : "bg-dark-subtle px-2 py-3"
+      }
     >
       <Container fluid className="px-0">
         <Navbar.Brand href="#home" className="ps-2">

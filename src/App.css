@@ -37,6 +37,14 @@ html {
   border-top: none !important;
 }
 
+#navbar-custom {
+  transition: padding 0.5s ease-in-out;
+}
+
+#navbar-custom.scrolled {
+  padding: 0;
+}
+
 /* .logo {
   height: 6em;
   padding: 1.5em;
