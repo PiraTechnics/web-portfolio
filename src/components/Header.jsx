@@ -7,8 +7,6 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 50);
-      /*       console.log(scroll);
-      console.log(window.scrollY); */
     });
   }, [scroll]);
 
@@ -16,11 +14,8 @@ const Header = () => {
     <Navbar
       id="navbar-custom"
       expand="sm"
-      /*       bg="dark-subtle"
-      data-bs-theme="dark" */
       sticky="top"
       className={scroll ? "px-2 py-1 scrolled" : "px-2 py-3"}
-      /* className="px-2 py-3" */
     >
       <Container fluid>
         <Navbar.Brand href="#intro" className="ps-3">
@@ -30,7 +25,6 @@ const Header = () => {
             width={60}
             alt="Devin Younge Logo"
           ></Image>{" "}
-          {/* <span className="px-2 fs-4 link-text">Devin Younge</span> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="top-nav-toggler"
@@ -38,7 +32,6 @@ const Header = () => {
         />
         <Navbar.Collapse
           id="top-nav-toggler"
-          /* className="justify-content-end my-2 pe-3" */
           className="justify-content-end mt-2"
         >
           <Nav id="nav-scroll">

@@ -13,12 +13,7 @@ const App = () => {
     <>
       <Header />
       <Intro />
-      <Container
-        data-bs-spy="scroll"
-        data-bs-target=".navbar"
-        data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true"
-      >
+      <Container>
         <About />
         <Skills />
         <Projects />
