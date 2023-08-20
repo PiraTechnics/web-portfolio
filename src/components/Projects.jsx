@@ -1,5 +1,5 @@
-import AppLink from "./AppLink";
-import WetterIcon from "./assets/wetter-icon.png";
+import AppLink from "./utils/AppLink";
+import WetterIcon from "../images/wetter-icon.png";
 import { FcTodoList, FcCalculator } from "react-icons/fc";
 import { TbCrystalBall } from "react-icons/tb";
 import { GiBookshelf } from "react-icons/gi";

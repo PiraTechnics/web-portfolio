@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PiraTechnics from "./assets/pira-icon.png";
+import PiraTechnics from "../images/pira-icon.png";
 import { Container, Navbar, Nav, Image } from "react-bootstrap";
 
 const Header = () => {
