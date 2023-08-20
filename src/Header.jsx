@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import PiraTechnics from "./assets/pira-icon.png";
 import { Container, Navbar, Nav, Image } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -18,39 +16,44 @@ const Header = () => {
     <Navbar
       id="navbar-custom"
       expand="sm"
-      /*       bg="dark" */
-      data-bs-theme="dark"
-      fixed="top"
-      /* className="navbar-custom py-1" */
-      className={
-        scroll
-          ? "bg-dark-subtle px-2 py-1 scrolled"
-          : "bg-dark-subtle px-2 py-3"
-      }
+      /*       bg="dark-subtle"
+      data-bs-theme="dark" */
+      sticky="top"
+      className={scroll ? "px-2 py-1 scrolled" : "px-2 py-3"}
+      /* className="px-2 py-3" */
     >
-      <Container fluid className="px-0">
-        <Navbar.Brand href="#home" className="ps-2">
+      <Container fluid>
+        <Navbar.Brand href="#intro" className="ps-3">
           <Image
             fluid
             src={PiraTechnics}
-            width={50}
+            width={60}
             alt="Devin Younge Logo"
           ></Image>{" "}
-          <span className="px-2 fs-4">Devin Younge</span>
+          {/* <span className="px-2 fs-4 link-text">Devin Younge</span> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="top-nav-toggler"
-          className="me-3 border border-0"
+          className="pe-4 border border-0"
         />
         <Navbar.Collapse
-          id="to-nav-toggler"
-          className="justify-content-end my-1 border-top"
+          id="top-nav-toggler"
+          /* className="justify-content-end my-2 pe-3" */
+          className="justify-content-end mt-2"
         >
-          <Nav>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav id="nav-scroll">
+            <Nav.Link id="about-nav" href="#about">
+              About
+            </Nav.Link>
+            <Nav.Link id="skills-nav" href="#skills">
+              Skills
+            </Nav.Link>
+            <Nav.Link id="projects-nav" href="#projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link id="contact-nav" href="#contact">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

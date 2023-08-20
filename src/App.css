@@ -6,24 +6,66 @@
   text-align: center;
   min-width: 300px;
   font-family: "Lato", sans-serif;
+  background-color: #1d293a;
+  /* color: #00cf5d; */
 }
 
-html {
+/* html {
   background-color: #888;
+  background-color: #1d293a;
+  color: #00cf5d;
+} */
+
+div.container-fluid {
+  color: #17ac5a;
+}
+
+/* .link-text {
+  color: #17ac5a;
+  transition: color 0.3s ease-in-out;
+} */
+
+.link-text:hover,
+.link-text:active,
+.link-text:focus {
+  color: whitesmoke;
 }
 
 /* Custom Stuff -- Overriding Bootstrap */
-.nav-link:focus {
+/* .nav-link:focus {
   background-color: black;
   color: white;
+} */
+
+/* .nav-link:hover {
+  font-size: 1.2em;
+} */
+
+.nav-link {
+  color: #17ac5a;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
-  color: rgb(231, 231, 231);
+  color: whitesmoke;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #5dffa6;
+  background: #111a27;
+  transition: all 0.5s ease-in-out;
+  /* font-size: 1.2em; */
+}
+
+.navbar-collapse.show {
+  background: #1d293a;
+  border: 1.5px solid #5dffa6;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 172, 90, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-toggler:focus,
@@ -33,9 +75,9 @@ html {
   box-shadow: none;
 }
 
-.navbar-collapse.collapse:not(.show) {
+/* .navbar-collapse.collapse:not(.show) {
   border-top: none !important;
-}
+} */
 
 #navbar-custom {
   transition: padding 0.5s ease-in-out;
@@ -43,6 +85,135 @@ html {
 
 #navbar-custom.scrolled {
   padding: 0;
+}
+
+/**** Title Card ****/
+.title-container {
+  padding-top: 12rem;
+}
+
+.title {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  border-top: solid;
+  border-left: solid;
+  border-width: 5px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom, #17ac5a, #1d293a 50%);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  border-bottom: solid;
+  border-right: solid;
+  border-width: 5px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to top left, #17ac5a, #1d293a 50%);
+}
+
+.fadein-down {
+  animation: fadeInDown 1s;
+  -webkit-animation: fadeInDown 1s;
+  -moz-animation: fadeInDown 1s;
+  -o-animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Important for Chrome */
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadein-up {
+  animation: fadeInUp 1s;
+  -webkit-animation: fadeInUp 1s;
+  -moz-animation: fadeInUp 1s;
+  -o-animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Important for Chrome */
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 120px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* .logo {

@@ -1,22 +1,27 @@
-import { Container, Row } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaChevronDown } from "react-icons/fa";
 
 const Intro = () => {
   return (
     <Container
       id="intro"
-      className="py-5 mt-5 bg-secondary-subtle position-relative"
+      className="position-relative"
       style={{ minHeight: "50vh" }}
       fluid
     >
-      <Row>
-        <h1>Hi, I'm Devin!</h1>
-        <h5>Full Stack Web Developer</h5>
+      <Row className="title-container justify-content-center">
+        <Col md={10} lg={8} xl={7} xxl={6} className="px-5">
+          {/*           <h1 className="fadein-down title pb-2 pt-4 border-success border-4 border-top border-start rounded"> */}
+          <h1 className="fadein-down title pb-2 pt-4">Devin Younge</h1>
+          <h5 className="fadein-up subtitle border-success border-3 pb-4 border-bottom border-end rounded">
+            Full Stack Web Developer
+          </h5>
+        </Col>
       </Row>
       <Row className="position-absolute bottom-0 end-50 pb-5">
-        <FaChevronDown size={30} className="" />
+        <a href="#about">
+          <FaChevronDown size={30} className="nav-link" />
+        </a>
       </Row>
     </Container>
   );

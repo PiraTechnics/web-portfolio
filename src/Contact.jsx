@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import {
   FaGithub,
   FaInstagram,
@@ -7,11 +6,10 @@ import {
   FaTwitter,
   FaEnvelope,
 } from "react-icons/fa";
-import "./App.css";
 
 const Contact = () => {
   return (
-    <Container id="contact" className="py-5 bg-secondary-subtle" fluid>
+    <Container id="contact" className="py-5" fluid>
       <h3>Get in touch! Links Below</h3>
       <Row className="pt-3">
         <Col>

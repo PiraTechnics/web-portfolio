@@ -4,8 +4,6 @@ import { FcTodoList, FcCalculator } from "react-icons/fc";
 import { TbCrystalBall } from "react-icons/tb";
 import { GiBookshelf } from "react-icons/gi";
 import { Container, Row, Image } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 
 const Projects = () => {
   return (
