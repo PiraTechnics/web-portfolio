@@ -18,6 +18,10 @@ div.container-fluid {
   color: whitesmoke;
 }
 
+.section-container {
+  min-height: 50vh;
+}
+
 /* Custom Stuff -- Overriding Bootstrap */
 .nav-link {
   color: #17ac5a;
@@ -62,10 +66,6 @@ div.container-fluid {
 }
 
 /**** Title Card ****/
-.title-container {
-  padding-top: 12rem;
-}
-
 .title {
   font-size: 4rem;
   letter-spacing: 1px;
@@ -188,4 +188,20 @@ div.container-fluid {
     opacity: 1;
     transform: none;
   }
+}
+
+/*** Color Grayscale fade ***/
+.color-pulse {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  transition: all 1s ease-in-out;
+}
+
+.color-pulse:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
 }
