@@ -205,3 +205,12 @@ div.container-fluid {
   -ms-filter: none;
   filter: none;
 }
+
+/*** Icon Embiggen ***/
+.skill-icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
