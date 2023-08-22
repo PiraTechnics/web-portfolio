@@ -206,6 +206,13 @@ div.container-fluid {
   filter: none;
 }
 
+/*** Skill toggle button custom style ***/
+.toggle-tag {
+  max-width: 150px;
+  /* border: 1px solid #5dffa6; */
+  border-radius: 2ch;
+}
+
 /*** Icon Embiggen ***/
 .skill-icon {
   transition: all 0.2s ease-in-out;
