@@ -1,6 +1,7 @@
+/** Root and Container Customization **/
 #root {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   text-align: center;
   min-width: 300px;
@@ -20,9 +21,10 @@ div.container-fluid {
 
 .section-container {
   min-height: 50vh;
+  max-width: 1100px;
 }
 
-/* Custom Stuff -- Overriding Bootstrap */
+/*** Custom Navbar ***/
 .nav-link {
   color: #17ac5a;
   transition: color 0.3s ease-in-out;

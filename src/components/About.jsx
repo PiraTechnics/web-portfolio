@@ -13,7 +13,7 @@ const About = () => {
         className="flex-grow-1 align-items-center mt-5"
         style={{ minHeight: "90%" }}
       >
-        <Col xs={10} md={6} className="ps-5 fs-5 mx-auto">
+        <Col xs={10} sm={6} className="ps-5 fs-5 mx-auto">
           Hi there! I'm Devin, and I am a Web Developer. I create beautiful,
           custom websites for a variety of clients. These days I primarily work
           in Javascript on JAMstack applications, but I also have experience
@@ -21,7 +21,7 @@ const About = () => {
           Computer Science from the University of Colorado at Boulder in 2012,
           and have followed a multifacted career trajectory since then!
         </Col>
-        <Col xs={10} md={6} className="my-5 mx-auto">
+        <Col xs={10} sm={6} className="my-5 mx-auto">
           <Image
             fluid
             src={PiraHeadshot}
