@@ -35,13 +35,8 @@ const Skills = () => {
   /* Define our icons based on whichever button is pressed -- dev by default*/
   /* ***NOTE: We may want to try a different method in future - display/hide and not toggle buttons*** */
   iconList = Object.values(iconImport).map((iconPath, key) => (
-    <Col xs={4} sm={2} lg={1} className="p-3">
-      <Image
-        key={"skill-icon-" + key}
-        src={iconPath}
-        width={"65px"}
-        className="skill-icon"
-      />
+    <Col xs={4} sm={2} lg={1} key={"skill-icon-" + key} className="p-3">
+      <Image src={iconPath} width={"65px"} className="skill-icon" />
     </Col>
   ));
 
