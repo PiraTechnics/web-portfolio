@@ -6,6 +6,7 @@ const Intro = () => {
     <Container
       id="intro"
       className="section-container d-flex flex-column"
+      style={{ height: "90vh" }}
       fluid
     >
       <Row className="justify-content-center flex-grow-1 align-items-end">

@@ -7,10 +7,17 @@
   min-width: 300px;
   font-family: "Lato", sans-serif;
   background-color: #1d293a;
+  /*Vars*/
+  --slide-fade-duration: 1.5s;
+  --slide-fade-down-offset: -150px;
+  --slide-fade-up-offset: 150px;
+  --text-default-color: #17ac5a;
+  --text-highlight-color: #5dffa6;
+  --background-color: #1d293a;
 }
 
 div.container-fluid {
-  color: #17ac5a;
+  color: var(--text-default-color);
 }
 
 .link-text:hover,
@@ -26,7 +33,7 @@ div.container-fluid {
 
 /*** Custom Navbar ***/
 .nav-link {
-  color: #17ac5a;
+  color: var(--text-default-color);
   transition: color 0.3s ease-in-out;
 }
 
@@ -36,14 +43,14 @@ div.container-fluid {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: #5dffa6;
+  color: var(--text-highlight-color);
   background: #111a27;
   transition: all 0.5s ease-in-out;
 }
 
 .navbar-collapse.show {
-  background: #1d293a;
-  border: 1.5px solid #5dffa6;
+  background: var(--background-color);
+  border: 1.5px solid var(--text-highlight-color);
   transition: all 0.3s ease-in-out;
 }
 
@@ -69,36 +76,44 @@ div.container-fluid {
 
 /**** Title Card ****/
 .title {
-  font-size: 4rem;
+  font-size: 4.2rem;
   letter-spacing: 1px;
   border-top: solid;
   border-left: solid;
-  border-width: 5px;
+  border-width: 6px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right bottom, #17ac5a, #1d293a 50%);
+  border-image-source: linear-gradient(
+    to right bottom,
+    var(--text-default-color),
+    var(--background-color) 50%
+  );
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 0.5px;
   border-bottom: solid;
   border-right: solid;
   border-width: 5px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to top left, #17ac5a, #1d293a 50%);
+  border-image-source: linear-gradient(
+    to top left,
+    var(--text-default-color),
+    var(--background-color) 50%
+  );
 }
 
 .fadein-down {
-  animation: fadeInDown 1.2s;
-  -webkit-animation: fadeInDown 1.2s;
-  -moz-animation: fadeInDown 1.2s;
-  -o-animation: fadeInDown 1.2s;
+  animation: fadeInDown var(--slide-fade-duration);
+  -webkit-animation: fadeInDown var(--slide-fade-duration);
+  -moz-animation: fadeInDown var(--slide-fade-duration);
+  -o-animation: fadeInDown var(--slide-fade-duration);
 }
 
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -120px, 0);
+    transform: translate3d(0, var(--slide-fade-down-offset), 0);
   }
   100% {
     opacity: 1;
@@ -109,7 +124,7 @@ div.container-fluid {
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -120px, 0);
+    transform: translate3d(0, var(--slide-fade-down-offset), 0);
   }
   100% {
     opacity: 1;
@@ -121,7 +136,7 @@ div.container-fluid {
 @-moz-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -120px, 0);
+    transform: translate3d(0, var(--slide-fade-down-offset), 0);
   }
   100% {
     opacity: 1;
@@ -132,7 +147,7 @@ div.container-fluid {
 @-o-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -120px, 0);
+    transform: translate3d(0, var(--slide-fade-down-offset), 0);
   }
   100% {
     opacity: 1;
@@ -141,16 +156,16 @@ div.container-fluid {
 }
 
 .fadein-up {
-  animation: fadeInUp 1.2s;
-  -webkit-animation: fadeInUp 1.2s;
-  -moz-animation: fadeInUp 1.2s;
-  -o-animation: fadeInUp 1.2s;
+  animation: fadeInUp var(--slide-fade-duration);
+  -webkit-animation: fadeInUp var(--slide-fade-duration);
+  -moz-animation: fadeInUp var(--slide-fade-duration);
+  -o-animation: fadeInUp var(--slide-fade-duration);
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 120px, 0);
+    transform: translate3d(0, var(--slide-fade-up-offset), 0);
   }
   100% {
     opacity: 1;
@@ -161,7 +176,7 @@ div.container-fluid {
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 120px, 0);
+    transform: translate3d(0, var(--slide-fade-up-offset), 0);
   }
   100% {
     opacity: 1;
@@ -173,7 +188,7 @@ div.container-fluid {
 @-moz-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 120px, 0);
+    transform: translate3d(0, var(--slide-fade-up-offset), 0);
   }
   100% {
     opacity: 1;
@@ -184,7 +199,7 @@ div.container-fluid {
 @-o-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 120px, 0);
+    transform: translate3d(0, var(--slide-fade-up-offset), 0);
   }
   100% {
     opacity: 1;
