@@ -9,7 +9,8 @@ const Projects = () => {
   return (
     <Container id="projects" fluid style={{ marginTop: "75px" }}>
       <Row>
-        <h2>Projects</h2>
+        <p>Under Construction -- Pardon our kilobits!</p>
+        {/*         <h2>Projects</h2>
         <p>Find below a list of projects that I've worked on:</p>
       </Row>
       <Row>
@@ -42,7 +43,7 @@ const Projects = () => {
           link={"https://piratechnics.github.io/odin-project-calculator/"}
           title={"Calc5000"}
           subtitle={"Crunch the Numbers"}
-        ></AppLink>
+        ></AppLink> */}
       </Row>
     </Container>
   );

@@ -83,7 +83,7 @@ const Interests = () => {
           </Card>
         </Col>
       </Row>
-      <DownScroll navLink={"#skills"} />
+      <DownScroll navLink={"#projects"} />
     </Container>
   );
 };
