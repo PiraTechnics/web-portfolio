@@ -6,7 +6,8 @@
   text-align: center;
   min-width: 300px;
   font-family: "Lato", sans-serif;
-  background-color: #1d293a;
+  background-color: var(--background-color);
+
   /*Vars*/
   --slide-fade-duration: 1.5s;
   --slide-fade-down-offset: -150px;
@@ -14,6 +15,9 @@
   --text-default-color: #17ac5a;
   --text-highlight-color: #5dffa6;
   --background-color: #1d293a;
+  --alt-background-color: #111a28;
+  /*   --background-color: #111a28;
+  --alt-background-color: #1d293a; */
 }
 
 div.container-fluid {
@@ -44,7 +48,7 @@ div.container-fluid {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: var(--text-highlight-color);
-  background: #111a27;
+  background: var(--alt-background-color);
   transition: all 0.5s ease-in-out;
 }
 
@@ -238,3 +242,21 @@ div.container-fluid {
 .skill-icon:hover {
   transform: scale(1.2);
 }
+
+/*** Interest Icon Cards ***/
+.interest-card {
+  background-color: var(--alt-background-color);
+  color: var(--text-default-color);
+  max-width: 300px;
+}
+
+.card-img {
+  filter: contrast(0) brightness(1) sepia(1) saturate(300%) hue-rotate(75deg)
+    brightness(1.2);
+  /* transition: transform 1s; */
+}
+
+/* .card-img:hover {
+  transform: rotate(360deg);
+}
+ */
