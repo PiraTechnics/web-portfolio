@@ -1,50 +1,81 @@
-import AppLink from "./utils/AppLink";
-import WetterIcon from "../images/wetter-icon.png";
-import { FcTodoList, FcCalculator } from "react-icons/fc";
-import { TbCrystalBall } from "react-icons/tb";
-import { GiBookshelf } from "react-icons/gi";
-import { Container, Row, Image } from "react-bootstrap";
+import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import DownScroll from "./utils/DownScroll";
+import Github from "../images/projecticons/github.svg";
+import ExternalLink from "../images/projecticons/external.svg";
+import WetterIcon from "../images/projecticons/Wetter.png";
+import ProjectCard from "./utils/ProjectCard";
 
 const Projects = () => {
   return (
-    <Container id="projects" fluid style={{ marginTop: "75px" }}>
+    <Container
+      id="projects"
+      fluid
+      className="py-5 mt-3 section-container d-flex flex-column"
+    >
       <Row>
-        <p>Under Construction -- Pardon our kilobits!</p>
-        {/*         <h2>Projects</h2>
-        <p>Find below a list of projects that I've worked on:</p>
+        <h2>Portfolio</h2>
+        <p>Some of the things I've built</p>
       </Row>
-      <Row>
-        <AppLink
-          icon={<Image src={WetterIcon} alt="wetter cloud icon"></Image>}
-          link={"https://piratechnics.github.io/wetter"}
-          title={"Wetter"}
-          subtitle={"The Better Weather App"}
-        />
-        <AppLink
-          icon={<FcTodoList size={75} />}
-          link={"https://piratechnics.github.io/Prio/"}
-          title={"Prio"}
-          subtitle={"Your Tasklist, Prioritized"}
-        />
-        <AppLink
-          icon={<TbCrystalBall size={65} />}
-          link={"https://piratechnics.github.io/wisdomball/"}
-          title={"Wisdomball"}
-          subtitle={"A most ponderous Orb"}
-        ></AppLink>
-        <AppLink
-          icon={<GiBookshelf size={65} color={"#624a2e"} />}
-          link={"https://piratechnics.github.io/BibLog/"}
-          title={"BibLog"}
-          subtitle={"Record your reading"}
-        ></AppLink>
-        <AppLink
-          icon={<FcCalculator size={75} />}
-          link={"https://piratechnics.github.io/odin-project-calculator/"}
-          title={"Calc5000"}
-          subtitle={"Crunch the Numbers"}
-        ></AppLink> */}
+      <Row className="justify-content-center">
+        <Col
+          xs={10}
+          sm={6}
+          lg={3}
+          className="my-3 d-flex align-items-center justify-content-center"
+        >
+          <ProjectCard
+            title={"Wetter"}
+            text={"A responsive, location-based weather application"}
+            thumbnail={WetterIcon}
+            github={"https://github.com/PiraTechnics/wetter"}
+            external={"https://piratechnics.github.io/wetter/"}
+            technologies={["React", "Bootstrap", "ViteJs"]}
+          />
+        </Col>
+        <Col
+          xs={10}
+          sm={6}
+          lg={3}
+          className="my-3 d-flex align-items-center justify-content-center"
+        >
+          <ProjectCard
+            title={"QuestMap"}
+            text={"Upload, Edit and plot your RPG journey"}
+            thumbnail={WetterIcon}
+            github={"https://github.com/PiraTechnics/questmap"}
+            technologies={["Python", "Django", "LeafletJS"]}
+          />
+        </Col>
+        <Col
+          xs={10}
+          sm={6}
+          lg={3}
+          className="my-3 d-flex align-items-center justify-content-center"
+        >
+          <ProjectCard
+            title={"QuestMap"}
+            text={"Upload, Edit and plot your RPG journey"}
+            thumbnail={WetterIcon}
+            github={"https://github.com/PiraTechnics/questmap"}
+            technologies={["Python", "Django", "LeafletJS"]}
+          />
+        </Col>
+        <Col
+          xs={10}
+          sm={6}
+          lg={3}
+          className="my-3 d-flex align-items-center justify-content-center"
+        >
+          <ProjectCard
+            title={"QuestMap"}
+            text={"Upload, Edit and plot your RPG journey"}
+            thumbnail={WetterIcon}
+            github={"https://github.com/PiraTechnics/questmap"}
+            technologies={["Python", "Django", "LeafletJS"]}
+          />
+        </Col>
       </Row>
+      <DownScroll navLink={"#contact"} />
     </Container>
   );
 };

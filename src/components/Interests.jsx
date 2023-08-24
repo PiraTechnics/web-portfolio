@@ -32,7 +32,7 @@ const Interests = () => {
               className="card-img px-5 py-3"
             />
             <hr className="m-1 border-2 opacity-50" />
-            <Card.Body className="card-body">
+            <Card.Body>
               <Card.Title>Tabletop RPGs</Card.Title>
               <Card.Text>
                 I play and GM a variety of tabletop adventure games, & pen and
@@ -54,7 +54,7 @@ const Interests = () => {
               className="card-img px-5 py-3"
             />
             <hr className="m-1 border-2 opacity-50" />
-            <Card.Body className="card-body">
+            <Card.Body>
               <Card.Title>Reading</Card.Title>
               <Card.Text>
                 I collect and read quality editions of fantasy, horror and
@@ -76,7 +76,7 @@ const Interests = () => {
               className="card-img px-5 py-3"
             />
             <hr className="m-1 border-2 opacity-50" />
-            <Card.Body className="card-body">
+            <Card.Body>
               <Card.Title>Video Games</Card.Title>
               <Card.Text>
                 I enjoy PC and console games, any anything with a big world to
@@ -98,7 +98,7 @@ const Interests = () => {
               className="card-img px-5 py-3"
             />
             <hr className="m-1 border-2 opacity-50" />
-            <Card.Body className="card-body">
+            <Card.Body>
               <Card.Title>Travel</Card.Title>
               <Card.Text>
                 I've been to <strong>19</strong> countries,

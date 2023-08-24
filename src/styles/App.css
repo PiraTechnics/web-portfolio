@@ -256,6 +256,18 @@ div.container-fluid {
   /* transition: transform 1s; */
 }
 
+.project-card {
+  background-color: #38414d;
+  color: #00b63d;
+  border: 1px solid #006120;
+  max-width: 300px;
+}
+
+.line-list span {
+  font-size: 0.9em;
+  margin-right: 1rem;
+}
+
 /* .card-img:hover {
   transform: rotate(360deg);
 }
