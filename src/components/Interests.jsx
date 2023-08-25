@@ -18,7 +18,7 @@ const Interests = () => {
           My hobbies and passions outside of coding
         </div>
       </Row>
-      <Row className="p-5 pt-3 justify-content-center">
+      <Row className="p-2 pt-3 justify-content-center">
         <Col
           xs={10}
           sm={6}
