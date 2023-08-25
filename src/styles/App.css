@@ -14,13 +14,15 @@
   --slide-fade-down-offset: -150px;
   --slide-fade-up-offset: 150px;
   --text-default-color: #17ac49;
-  --text-highlight-color: #5dffa6;
+  --text-highlight-color: #4fe35d;
   --background-color: #1d293a;
   --alt-background-color: #111a28;
+  --terminal-bg-color: #141c27;
+  --terminal-text-color: #4fe35d;
 }
 
 .terminal-bg {
-  background: #141c27;
+  background: var(--terminal-bg-color);
   box-shadow: 0 0 40px var(--alt-background-color);
   border-radius: 1.5ch;
 }
@@ -28,7 +30,7 @@
 .section-header {
   padding: 5px 0;
   margin: auto;
-  background: #141c27;
+  background: var(--terminal-bg-color);
   box-shadow: 0 0 40px var(--alt-background-color);
   border-radius: 1.5ch;
 }
@@ -58,6 +60,7 @@ div.container-fluid {
 
 /*** Custom Navbar ***/
 .nav-link {
+  border-radius: 1ch;
   color: var(--text-default-color);
   transition: color 0.3s ease-in-out;
 }
@@ -68,9 +71,10 @@ div.container-fluid {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: var(--text-highlight-color);
-  background: var(--alt-background-color);
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  color: var(--text-default-color);
+  background: rgb(19, 19, 19);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-collapse.show {
@@ -91,12 +95,13 @@ div.container-fluid {
 }
 
 #navbar-custom {
-  transition: padding 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   animation-delay: 0.5s;
 }
 
 #navbar-custom.scrolled {
   padding: 0;
+  background: var(--alt-background-color);
 }
 
 /**** Title Card ****/
