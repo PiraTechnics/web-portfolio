@@ -11,7 +11,7 @@ const ProjectCard = ({
   technologies,
 }) => {
   return (
-    <Card className="border-0 text-start" bg="dark-subtle">
+    <Card className="border-0 text-start project-card" bg="dark-subtle">
       <Card.Img variant="top" src={thumbnail} />
       <Card.Body className="py-2">
         <Row>

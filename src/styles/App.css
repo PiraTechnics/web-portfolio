@@ -257,10 +257,12 @@ div.container-fluid {
 }
 
 .project-card {
-  background-color: #38414d;
-  color: #00b63d;
-  border: 1px solid #006120;
-  max-width: 300px;
+  transition: all 0.15s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px teal;
 }
 
 .line-list span {
