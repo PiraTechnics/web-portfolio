@@ -10,24 +10,26 @@ const About = () => {
       fluid
     >
       <Row
-        className="flex-grow-1 align-items-center mt-5"
+        className="flex-grow-1 align-items-center justify-content-center mt-5"
         style={{ minHeight: "90%" }}
       >
-        <Col xs={10} sm={6} className="ps-5 fs-5 mx-auto">
-          Hi there! I'm Devin, and I am a Web Developer. I create beautiful,
-          custom websites for a variety of clients. These days I primarily work
-          in Javascript on JAMstack applications, but I also have experience
-          working with Python and Java. I earned my Bachelor's Degree in
-          Computer Science from the University of Colorado at Boulder in 2012,
-          and have followed a multifacted career trajectory since then!
+        <Col xs={10} sm={6} className="ps-5 fs-5 text-start">
+          Hi there! I'm{" "}
+          <strong>
+            <i>Devin Younge</i>
+          </strong>
+          , Web Developer & Designer with a background in application
+          development. I also have extensive experience in marketing and public
+          speaking from my previous career in Esports Broadcast. You might also
+          know me by my stage name, <i>PiraTechnics</i>.
         </Col>
-        <Col xs={10} sm={6} className="my-5 mx-auto">
+        <Col xs={10} sm={6} className="my-5">
           <Image
             fluid
             src={PiraHeadshot}
             roundedCircle
             className="color-pulse"
-            style={{ maxWidth: "80%" }}
+            style={{ maxWidth: "300px" }}
           />
         </Col>
       </Row>

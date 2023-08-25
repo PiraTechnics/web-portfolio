@@ -9,52 +9,55 @@ import {
 
 const Contact = () => {
   return (
-    <Container id="contact" className="py-5" fluid>
-      <h3>Get in touch! Links Below</h3>
-      <Row className="pt-3">
-        <Col>
-          <a className="text-dark" href="mailto:devin1younge@gmail.com">
-            <FaEnvelope size={30} />
+    <Container
+      id="contact"
+      className="py-5 mt-3 section-container d-flex flex-column"
+      fluid
+    >
+      <h3>Get in touch!</h3>
+      <Row className="pt-3 justify-content-center">
+        <Col xs={2} sm={1}>
+          <a
+            className="text-dark contact-icon"
+            href="mailto:devin1younge@gmail.com"
+          >
+            <FaEnvelope size={30} className="nav-link" />
           </a>
         </Col>
-        <Col>
+        <Col xs={2} sm={1}>
           <a
             href="https://linkedin.com/in/devinyounge"
             target="_blank"
             rel="noreferrer"
-            className="text-dark"
           >
-            <FaLinkedin size={30} />
+            <FaLinkedin size={30} className="nav-link" />
           </a>
         </Col>
-        <Col>
+        <Col xs={2} sm={1}>
           <a
             href="https://github.com/piratechnics"
             target="_blank"
             rel="noreferrer"
-            className="text-dark"
           >
-            <FaGithub size={30} />
+            <FaGithub size={30} className="nav-link" />
           </a>
         </Col>
-        <Col>
+        <Col xs={2} sm={1}>
           <a
             href="https://twitter.com/piratechnics"
             target="_blank"
             rel="noreferrer"
-            className="text-dark"
           >
-            <FaTwitter size={30} />
+            <FaTwitter size={30} className="nav-link" />
           </a>
         </Col>
-        <Col>
+        <Col xs={2} sm={1}>
           <a
             href="https://instagram.com/piratechnics"
             target="_blank"
             rel="noreferrer"
-            className="text-dark"
           >
-            <FaInstagram size={30} />
+            <FaInstagram size={30} className="nav-link" />
           </a>
         </Col>
       </Row>

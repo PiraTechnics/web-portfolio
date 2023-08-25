@@ -1,10 +1,11 @@
 import { Container, Row } from "react-bootstrap";
-import DownScroll from "./utils/DownScroll";
 import ProjectCard from "./utils/ProjectCard";
 import Wetter from "../images/projecticons/Wetter.png";
 import QuestMap from "../images/projecticons/QuestMap.png";
 import Prio from "../images/projecticons/Prio.png";
 import WisdomBall from "../images/projecticons/WisdomBall.png";
+import Biblog from "../images/projecticons/Biblog.png";
+import Aliems from "../images/projecticons/Aliems.png";
 
 const Projects = () => {
   return (
@@ -54,7 +55,7 @@ const Projects = () => {
         <ProjectCard
           title={"Biblog"}
           text={"A simple web UI to keep track of your reading"}
-          thumbnail={Wetter}
+          thumbnail={Biblog}
           github={"https://github.com/PiraTechnics/BibLog"}
           external={"https://piratechnics.github.io/BibLog/"}
           technologies={["Vanilla JS", "Bootstrap"]}
@@ -62,12 +63,11 @@ const Projects = () => {
         <ProjectCard
           title={"Aliems!"}
           text={"A fun and easy Space Invaders clone"}
-          thumbnail={Wetter}
+          thumbnail={Aliems}
           github={"https://github.com/PiraTechnics/aliems"}
           technologies={["Python", "Pygame"]}
         />
       </Row>
-      <DownScroll navLink={"#contact"} />
     </Container>
   );
 };
