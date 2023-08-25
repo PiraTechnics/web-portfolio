@@ -11,7 +11,7 @@ const About = () => {
     >
       <Row
         className="flex-grow-1 align-items-center justify-content-center mt-5"
-        style={{ minHeight: "90%" }}
+        style={{ minHeight: "60vh" }}
       >
         <Col xs={10} sm={6} className="ps-4 fs-5 text-start">
           <div className="terminal-bg p-3">

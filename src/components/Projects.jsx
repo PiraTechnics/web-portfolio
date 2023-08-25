@@ -19,7 +19,7 @@ const Projects = () => {
         title={"Portfolio"}
         subtitle={"Some of the things I've built"}
       />
-      <Row className="justify-content-center">
+      <Row className="pt-4 justify-content-center">
         <ProjectCard
           title={"Wetter"}
           text={"A responsive, location-based weather application"}
