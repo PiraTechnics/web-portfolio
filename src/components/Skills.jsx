@@ -8,6 +8,7 @@ import {
 } from "react-bootstrap";
 import DownScroll from "./utils/DownScroll";
 import { useState } from "react";
+import SectionHeader from "./utils/SectionHeader";
 
 const Skills = () => {
   let [skillSet, setSkillSet] = useState("dev");
@@ -46,12 +47,10 @@ const Skills = () => {
       className="py-5 mt-3 section-container d-flex flex-column"
       fluid
     >
-      <Row>
-        <div className="text-center">
-          <h2>Skills & Experience</h2>
-          Some of the technologies I've worked with
-        </div>
-      </Row>
+      <SectionHeader
+        title={"Skills & Experience"}
+        subtitle={"Some of the technologies I've worked with"}
+      />
       <Row>
         <ToggleButtonGroup
           className="d-flex justify-content-center pt-4 pb-2"

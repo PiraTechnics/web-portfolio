@@ -6,6 +6,7 @@ import Prio from "../images/projecticons/Prio.png";
 import WisdomBall from "../images/projecticons/WisdomBall.png";
 import Biblog from "../images/projecticons/Biblog.png";
 import Aliems from "../images/projecticons/Aliems.png";
+import SectionHeader from "./utils/SectionHeader";
 
 const Projects = () => {
   return (
@@ -14,10 +15,10 @@ const Projects = () => {
       fluid
       className="py-5 mt-3 section-container d-flex flex-column"
     >
-      <Row>
-        <h2>Portfolio</h2>
-        <p>Some of the things I've built</p>
-      </Row>
+      <SectionHeader
+        title={"Portfolio"}
+        subtitle={"Some of the things I've built"}
+      />
       <Row className="justify-content-center">
         <ProjectCard
           title={"Wetter"}

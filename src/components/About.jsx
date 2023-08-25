@@ -13,15 +13,17 @@ const About = () => {
         className="flex-grow-1 align-items-center justify-content-center mt-5"
         style={{ minHeight: "90%" }}
       >
-        <Col xs={10} sm={6} className="ps-5 fs-5 text-start">
-          Hi there! I'm{" "}
-          <strong>
-            <i>Devin Younge</i>
-          </strong>
-          , Web Developer & Designer with a background in application
-          development. I also have extensive experience in marketing and public
-          speaking from my previous career in Esports Broadcast. You might also
-          know me by my stage name, <i>PiraTechnics</i>.
+        <Col xs={10} sm={6} className="ps-4 fs-5 text-start">
+          <div className="terminal-bg p-3">
+            Hi there! I'm{" "}
+            <strong>
+              <i>Devin Younge</i>
+            </strong>
+            , Web Developer & Designer with a background in application
+            development. I also have extensive experience in marketing and
+            public speaking from my previous career in Esports Broadcast. You
+            might also know me by my stage name, <i>PiraTechnics</i>.
+          </div>
         </Col>
         <Col xs={10} sm={6} className="my-5">
           <Image

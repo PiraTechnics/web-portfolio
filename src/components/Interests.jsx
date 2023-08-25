@@ -4,6 +4,7 @@ import TravelIcon from "../images/interesticons/airplane-departure.svg";
 import GameIcon from "../images/interesticons/console-controller.svg";
 import DiceIcon from "../images/interesticons/dice-twenty-faces-twenty.svg";
 import BookIcon from "../images/interesticons/spell-book.svg";
+import SectionHeader from "./utils/SectionHeader";
 
 const Interests = () => {
   return (
@@ -12,13 +13,11 @@ const Interests = () => {
       className="py-5 mt-3 section-container d-flex flex-column"
       fluid
     >
-      <Row>
-        <div className="text-center">
-          <h2>Interests</h2>
-          My hobbies and passions outside of coding
-        </div>
-      </Row>
-      <Row className="p-2 pt-3 justify-content-center">
+      <SectionHeader
+        title={"Interests"}
+        subtitle={"My hobbies and passions outside of coding"}
+      />
+      <Row className="p-2 justify-content-center">
         <Col
           xs={10}
           sm={6}
@@ -79,7 +78,7 @@ const Interests = () => {
             <Card.Body>
               <Card.Title>Video Games</Card.Title>
               <Card.Text>
-                I enjoy PC and console games, any anything with a big world to
+                I enjoy PC and console games, and anything with a big world to
                 explore.
               </Card.Text>
             </Card.Body>

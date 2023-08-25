@@ -18,7 +18,7 @@ const Header = () => {
       className={scroll ? "px-2 py-1 scrolled" : "px-2 py-3"}
     >
       <Container fluid>
-        <Navbar.Brand href="#intro" className="ps-3">
+        <Navbar.Brand href="#top" className="ps-3">
           <Image
             fluid
             src={PiraTechnics}
