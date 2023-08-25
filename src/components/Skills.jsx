@@ -79,7 +79,7 @@ const Skills = () => {
         </ToggleButtonGroup>
       </Row>
       <Row className="p-5 pt-3">{iconList}</Row>
-      <DownScroll navLink={"#projects"} />
+      <DownScroll navLink={"#interests"} />
     </Container>
   );
 };

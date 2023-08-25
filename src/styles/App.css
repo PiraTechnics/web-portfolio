@@ -257,6 +257,7 @@ div.container-fluid {
 }
 
 .project-card {
+  height: 100%;
   transition: all 0.15s ease-in-out;
 }
 

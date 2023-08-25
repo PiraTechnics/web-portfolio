@@ -3,6 +3,8 @@ import DownScroll from "./utils/DownScroll";
 import ProjectCard from "./utils/ProjectCard";
 import Wetter from "../images/projecticons/Wetter.png";
 import QuestMap from "../images/projecticons/QuestMap.png";
+import Prio from "../images/projecticons/Prio.png";
+import WisdomBall from "../images/projecticons/WisdomBall.png";
 
 const Projects = () => {
   return (
@@ -36,15 +38,15 @@ const Projects = () => {
         <ProjectCard
           title={"Prio"}
           text={"A To-do list web application"}
-          thumbnail={Wetter}
+          thumbnail={Prio}
           github={"https://github.com/PiraTechnics/Prio"}
           external={"https://piratechnics.github.io/Prio/"}
           technologies={["React", "Bootstrap"]}
         />
         <ProjectCard
-          title={"Wisdom Ball"}
+          title={"WisdomBall"}
           text={"Ponder the orb to receive nuggets of wisdom"}
-          thumbnail={Wetter}
+          thumbnail={WisdomBall}
           github={"https://github.com/PiraTechnics/wisdomball"}
           external={"https://piratechnics.github.io/wisdomball/"}
           technologies={["Vanilla JS", "CSS"]}

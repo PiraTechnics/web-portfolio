@@ -22,7 +22,7 @@ const ProjectCard = ({
         <Card.Body className="py-2">
           <Row>
             <Col xs>
-              <Card.Title className="fw-semibold fst-italic fs-3">
+              <Card.Title className="fw-semibold fst-italic fs-4">
                 {title}
               </Card.Title>
             </Col>
