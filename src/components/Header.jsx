@@ -41,6 +41,9 @@ const Header = () => {
             <Nav.Link id="skills-nav" href="#skills">
               Skills
             </Nav.Link>
+            <Nav.Link id="interests-nav" href="#interests">
+              Interests
+            </Nav.Link>
             <Nav.Link id="projects-nav" href="#projects">
               Projects
             </Nav.Link>

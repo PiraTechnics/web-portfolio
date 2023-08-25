@@ -22,7 +22,7 @@ const Projects = () => {
           thumbnail={Wetter}
           github={"https://github.com/PiraTechnics/wetter"}
           external={"https://piratechnics.github.io/wetter/"}
-          technologies={["React", "Bootstrap", "ViteJs"]}
+          technologies={["React", "Bootstrap", "Vite.js"]}
         />
         <ProjectCard
           title={"QuestMap"}
@@ -37,28 +37,31 @@ const Projects = () => {
           title={"Prio"}
           text={"A To-do list web application"}
           thumbnail={Wetter}
-          github={"https://github.com/PiraTechnics/questmap"}
+          github={"https://github.com/PiraTechnics/Prio"}
+          external={"https://piratechnics.github.io/Prio/"}
           technologies={["React", "Bootstrap"]}
         />
         <ProjectCard
           title={"Wisdom Ball"}
           text={"Ponder the orb to receive nuggets of wisdom"}
           thumbnail={Wetter}
-          github={"https://github.com/PiraTechnics/questmap"}
+          github={"https://github.com/PiraTechnics/wisdomball"}
+          external={"https://piratechnics.github.io/wisdomball/"}
           technologies={["Vanilla JS", "CSS"]}
         />
         <ProjectCard
           title={"Biblog"}
           text={"A simple web UI to keep track of your reading"}
           thumbnail={Wetter}
-          github={"https://github.com/PiraTechnics/questmap"}
+          github={"https://github.com/PiraTechnics/BibLog"}
+          external={"https://piratechnics.github.io/BibLog/"}
           technologies={["Vanilla JS", "Bootstrap"]}
         />
         <ProjectCard
           title={"Aliems!"}
           text={"A fun and easy Space Invaders clone"}
           thumbnail={Wetter}
-          github={"https://github.com/PiraTechnics/questmap"}
+          github={"https://github.com/PiraTechnics/aliems"}
           technologies={["Python", "Pygame"]}
         />
       </Row>
