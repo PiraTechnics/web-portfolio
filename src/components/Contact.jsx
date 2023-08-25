@@ -1,13 +1,16 @@
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
   FaEnvelope,
+  FaArrowRight,
 } from "react-icons/fa";
 import UpScroll from "./utils/UpScroll";
 import SectionHeader from "./utils/SectionHeader";
+import cv from "../assets/devinyounge.pdf";
 
 const Contact = () => {
   return (
@@ -61,6 +64,18 @@ const Contact = () => {
             rel="noreferrer"
           >
             <FaInstagram size={30} className="nav-link" />
+          </a>
+        </Col>
+      </Row>
+      <Row className="mt-5">
+        <Col>
+          <label className="fs-5">
+            TL;DR? grab my resume here <FaArrowRight />
+          </label>
+          <a href={cv} download="Devin-Younge-CV" target="_blank">
+            <Button variant="success" className="mx-3">
+              Download PDF
+            </Button>
           </a>
         </Col>
       </Row>
