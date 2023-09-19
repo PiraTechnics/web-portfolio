@@ -1,86 +1,86 @@
 import {
-  Container,
-  Row,
-  Col,
-  Image,
-  ToggleButtonGroup,
-  ToggleButton,
+	Container,
+	Row,
+	Col,
+	Image,
+	ToggleButtonGroup,
+	ToggleButton,
 } from "react-bootstrap";
 import DownScroll from "./utils/DownScroll";
 import { useState } from "react";
 import SectionHeader from "./utils/SectionHeader";
 
 const Skills = () => {
-  let [skillSet, setSkillSet] = useState("dev");
-  const handleChange = (val) => setSkillSet(val);
+	let [skillSet, setSkillSet] = useState("dev");
+	const handleChange = (val) => setSkillSet(val);
 
-  /* Vite-specific bulk import, map to Image Components */
-  let iconImport, iconList;
+	/* Vite-specific bulk import, map to Image Components */
+	let iconImport, iconList;
 
-  const devImport = import.meta.glob("../images/devicons/*", {
-    as: "url",
-    eager: true,
-  });
+	const devImport = import.meta.glob("../images/devicons/*", {
+		as: "url",
+		eager: true,
+	});
 
-  const toolImport = import.meta.glob("../images/toolicons/*", {
-    as: "url",
-    eager: true,
-  });
+	const toolImport = import.meta.glob("../images/toolicons/*", {
+		as: "url",
+		eager: true,
+	});
 
-  if (skillSet == "dev") {
-    iconImport = devImport;
-  } else if (skillSet == "tool") {
-    iconImport = toolImport;
-  }
+	if (skillSet == "dev") {
+		iconImport = devImport;
+	} else if (skillSet == "tool") {
+		iconImport = toolImport;
+	}
 
-  /* Define our icons based on whichever button is pressed -- dev by default*/
-  /* ***NOTE: We may want to try a different method in future - display/hide and not toggle buttons*** */
-  iconList = Object.values(iconImport).map((iconPath, key) => (
-    <Col xs={4} sm={2} lg={1} key={"skill-icon-" + key} className="p-3">
-      <Image src={iconPath} width={"65px"} className="skill-icon" />
-    </Col>
-  ));
+	/* Define our icons based on whichever button is pressed -- dev by default*/
+	/* ***NOTE: We may want to try a different method in future - display/hide and not toggle buttons*** */
+	iconList = Object.values(iconImport).map((iconPath, key) => (
+		<Col xs={4} sm={2} lg={1} key={"skill-icon-" + key} className="p-3">
+			<Image src={iconPath} width={"65px"} className="skill-icon" />
+		</Col>
+	));
 
-  return (
-    <Container
-      id="skills"
-      className="py-5 mt-3 section-container d-flex flex-column"
-      fluid
-    >
-      <SectionHeader
-        title={"Skills & Experience"}
-        subtitle={"Some of the technologies I've worked with"}
-      />
-      <Row>
-        <ToggleButtonGroup
-          className="d-flex justify-content-center pt-4 pb-2"
-          type="radio"
-          name="skillTypes"
-          defaultValue={skillSet}
-          onChange={handleChange}
-        >
-          <ToggleButton
-            variant="outline-success"
-            id="skills-button"
-            value={"dev"}
-            className="toggle-tag"
-          >
-            Programming
-          </ToggleButton>
-          <ToggleButton
-            variant="outline-success"
-            id="tools-button"
-            value={"tool"}
-            className="toggle-tag"
-          >
-            Tools
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </Row>
-      <Row className="p-5 pt-3">{iconList}</Row>
-      <DownScroll navLink={"#interests"} />
-    </Container>
-  );
+	return (
+		<Container
+			id="skills"
+			className="py-5 mt-3 section-container d-flex flex-column"
+			fluid
+		>
+			<SectionHeader
+				title={"Skills & Experience"}
+				subtitle={"Some of the technologies I've worked with"}
+			/>
+			<Row>
+				<ToggleButtonGroup
+					className="d-flex justify-content-center pt-4 pb-2"
+					type="radio"
+					name="skillTypes"
+					defaultValue={skillSet}
+					onChange={handleChange}
+				>
+					<ToggleButton
+						variant="outline-success"
+						id="skills-button"
+						value={"dev"}
+						className="toggle-tag"
+					>
+						Programming
+					</ToggleButton>
+					<ToggleButton
+						variant="outline-success"
+						id="tools-button"
+						value={"tool"}
+						className="toggle-tag"
+					>
+						Tools
+					</ToggleButton>
+				</ToggleButtonGroup>
+			</Row>
+			<Row className="p-5 pt-3 justify-content-center">{iconList}</Row>
+			<DownScroll navLink={"#interests"} />
+		</Container>
+	);
 };
 
 export default Skills;
