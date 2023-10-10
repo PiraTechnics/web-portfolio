@@ -1,11 +1,11 @@
 import { Container, Row } from "react-bootstrap";
 import ProjectCard from "./utils/ProjectCard";
+import Bookshelf from "../images/projecticons/Bookshelf.png";
 import NCAARecall from "../images/projecticons/Football.png";
 import Wetter from "../images/projecticons/Wetter.png";
 import QuestMap from "../images/projecticons/QuestMap.png";
 import Prio from "../images/projecticons/Prio.png";
 import WisdomBall from "../images/projecticons/WisdomBall.png";
-import Biblog from "../images/projecticons/Biblog.png";
 import Aliems from "../images/projecticons/Aliems.png";
 import SectionHeader from "./utils/SectionHeader";
 
@@ -21,6 +21,22 @@ const Projects = () => {
 				subtitle={"Some of the things I've built"}
 			/>
 			<Row className="pt-4 justify-content-center">
+				<ProjectCard
+					title={"Bard's Bookshelf"}
+					text={
+						"Stylish and responsive literature blog, powered by Gatsby and Netlify's CMS"
+					}
+					thumbnail={Bookshelf}
+					github={"https://github.com/PiraTechnics/gatsby-decap-blog"}
+					external={"https://bardsbookshelf.com"}
+					technologies={[
+						"React",
+						"TailwindCSS",
+						"Gatsby",
+						"GraphQL",
+						"Decap CMS",
+					]}
+				/>
 				<ProjectCard
 					title={"Football Recall"}
 					text={

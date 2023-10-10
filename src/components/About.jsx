@@ -19,9 +19,9 @@ const About = () => {
 						<strong>
 							<i>Devin Younge</i>
 						</strong>
-						, Full Stack Developer with a background in enterprise applications.
-						I also have extensive experience in Gaming and Entertainment as a
-						live commentator in Esports -- You might know me by my stage name,{" "}
+						, Frontend Developer with a background in enterprise applications. I
+						also have extensive experience in Gaming and Entertainment as a live
+						commentator in Esports -- You might know me by my stage name,{" "}
 						<i>PiraTechnics</i>.
 					</div>
 				</Col>
