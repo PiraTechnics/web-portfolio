@@ -1,5 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import ProjectCard from "./utils/ProjectCard";
+import BuyRule from "../images/projecticons/BuyRule.png";
 import Bookshelf from "../images/projecticons/Bookshelf.png";
 import NCAARecall from "../images/projecticons/Football.png";
 import Wetter from "../images/projecticons/Wetter.png";
@@ -21,6 +22,16 @@ const Projects = () => {
 				subtitle={"Some of the things I've built"}
 			/>
 			<Row className="pt-4 justify-content-center">
+				<ProjectCard
+					title={"BuyRule"}
+					text={
+						"A Legend of Zelda ecommerce parody application, stocking all an adventurer's needs!"
+					}
+					thumbnail={BuyRule}
+					github={"https://github.com/PiraTechnics/buyrule"}
+					external={"https://gregarious-phoenix-51a442.netlify.app"}
+					technologies={["React", "TailwindCSS", "Vite.js"]}
+				/>
 				<ProjectCard
 					title={"Bard's Bookshelf"}
 					text={
