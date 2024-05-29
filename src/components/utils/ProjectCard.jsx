@@ -28,7 +28,7 @@ const ProjectCard = ({
             </Col>
             <Col xs={1} className="d-flex justify-content-end pe-3">
               <a
-                href={external}
+                href={external || ""}
                 target="_blank"
                 rel="noopener"
                 /* don't display external link if we havent provided one */
